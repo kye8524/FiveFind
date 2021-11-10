@@ -1,0 +1,7 @@
+.index{
+    flex-direction: column;
+}
+.index_banner{
+   width: 100%;
+    margin-top: 60px;
+}
