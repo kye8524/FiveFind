@@ -2,10 +2,9 @@ ul{
     list-style: none;
 }
 .header{
-    width: 97%;
-    height: 56px;
-    padding : 10px 30px 10px 40px;
-    margin-top: 10px;
+    width: 96%;
+    height: 58px;
+    padding : 10px 50px 10px 45px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -15,7 +14,7 @@ ul{
 }
 .header_title{
     font-size: 25px;
-    color: #FFD112;
+    color: #ffcd00;
     font-weight: 400;
 }
 .header_box{
@@ -25,6 +24,9 @@ ul{
 .header_box_text{
     padding : 0 10px 0 10px;
 }
+.header_box_text:hover{
+    font-weight: 600;
+}
 .header_box_bar{
     width: 1px;
     height: 20px;
@@ -33,4 +35,7 @@ ul{
 }
 .header_box_login{
     padding : 0 20px 0 20px;
+}
+.header_box_login:hover{
+    font-weight: 600;
 }

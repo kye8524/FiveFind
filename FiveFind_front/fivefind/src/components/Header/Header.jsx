@@ -11,7 +11,7 @@ class Header extends Component{
                     <li className="header_box_text">팀 찾기</li>
                     <li className="header_box_text">공지사항</li>
                     <li className="header_box_bar" />
-                    <li className="header_box_login">로그인/회원가입</li>
+                    <li className="header_box_login">로그인 / 회원가입</li>
                 </ul>
             </div>
         )

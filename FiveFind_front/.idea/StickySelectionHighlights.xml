@@ -13,6 +13,16 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/components/Footer/Footer.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/components/Footer/Footer.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/components/Header/Header.css">
           <value>
             <PaintGroupHighlightMap />
@@ -39,6 +49,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/img/main.svg">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/img/people.svg">
           <value>
             <PaintGroupHighlightMap />
           </value>
