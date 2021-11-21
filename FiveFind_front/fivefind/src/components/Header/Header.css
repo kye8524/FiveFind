@@ -1,0 +1,36 @@
+ul{
+    list-style: none;
+}
+.header{
+    width: 97%;
+    height: 56px;
+    padding : 10px 30px 10px 40px;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.header_title{
+    font-size: 25px;
+    color: #FFD112;
+    font-weight: 400;
+}
+.header_box{
+    display: flex;
+    flex-direction: row;
+}
+.header_box_text{
+    padding : 0 10px 0 10px;
+}
+.header_box_bar{
+    width: 1px;
+    height: 20px;
+    background-color: #282c34;
+    margin: 3px 10px 0 20px;
+}
+.header_box_login{
+    padding : 0 20px 0 20px;
+}
