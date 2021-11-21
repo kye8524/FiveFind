@@ -1,0 +1,39 @@
+ul{
+    list-style: none;
+}
+.footer{
+    width: 65%;
+    margin : 30px 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_box_logo{
+    font-size: 25px;
+    color: #ffcd00;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.footer_box_text{
+    margin-left: 20px;
+    font-size: 17px;
+    color: dimgray;
+}
+.footer_box_text:hover{
+    color: #282c34;
+    font-weight: 500;
+}
+
+.footer_text{
+    text-align: left;
+    font-size: 15px;
+    color: #918e8e;
+}
+
