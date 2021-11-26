@@ -5,11 +5,11 @@ ul{
     width: 96%;
     height: 58px;
     padding : 10px 50px 10px 45px;
-    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3) 10%, transparent);
     position: fixed;
 }
 .header_title{
@@ -27,6 +27,12 @@ ul{
 .header_box_text:hover{
     font-weight: 600;
 }
+
+.header_box_scroll{
+    padding : 0 10px 0 10px;
+    color: white;
+    font-weight: 500;
+}
 .header_box_bar{
     width: 1px;
     height: 20px;
@@ -38,4 +44,16 @@ ul{
 }
 .header_box_login:hover{
     font-weight: 600;
+}
+
+.nav{
+    width: 96%;
+    height: 58px;
+    padding : 10px 50px 10px 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: white;
 }
