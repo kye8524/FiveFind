@@ -88,12 +88,27 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/join/JoinPage.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/join/joinPage.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/pages/login/Login.css">
           <value>
             <PaintGroupHighlightMap />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/pages/login/Login.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/login/loginPage.css">
           <value>
             <PaintGroupHighlightMap />
           </value>
