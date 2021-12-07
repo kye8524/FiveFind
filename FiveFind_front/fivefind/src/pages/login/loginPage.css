@@ -9,6 +9,7 @@
     width: 1000px;
     height: 550px;
     align-items: flex-start;
+    margin-top: 150px;
 }
 
 .login__box {
