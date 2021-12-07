@@ -1,3 +1,8 @@
+a:link, a:visited, a:hover, a:focus, a:active{
+    text-decoration : none;
+    color : inherit;
+    text-decoration-color: inherit;
+}
 ul{
     list-style: none;
 }
@@ -9,7 +14,8 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3) 10%, transparent);
+    //background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3) 10%, transparent);
+    background: white;
     position: fixed;
 }
 .header_title{

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link, Route, withRouter} from 'react-router-dom';
 import './Index.css';
 import Header from "../../components/Header/Header";
 import People from "../../img/people.svg";
