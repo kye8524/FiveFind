@@ -14,8 +14,7 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    //background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3) 10%, transparent);
-    background: white;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3) 10%, transparent);
     position: fixed;
 }
 .header_title{
