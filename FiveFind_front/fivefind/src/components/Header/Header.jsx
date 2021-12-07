@@ -18,7 +18,7 @@ function Header() {
                 <ul className="header_box">
                     <li className="header_box_text">팀 모집</li>
                     <li className="header_box_text">팀 찾기</li>
-                    <li className="header_box_text">공지사항</li>
+                    <li className="header_box_text"><Link to='/notice'>공지사항</Link></li>
                     <li className="header_box_bar" />
                     <li className="header_box_text"><Link to='/login'><div>로그인</div></Link></li>
                     <li className="header_box_text"><Link to='/join'><div>회원가입</div></Link></li>

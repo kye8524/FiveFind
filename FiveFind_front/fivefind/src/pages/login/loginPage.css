@@ -22,7 +22,7 @@
     height: 2px;
     width: 1000px;
     margin-bottom: 10px;
-    background-color: black;
+    background: #000000;
 }
 
 .login__title {
