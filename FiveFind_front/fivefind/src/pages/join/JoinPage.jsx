@@ -185,7 +185,7 @@ class JoinPage extends Component {
                     <div>
                         <div className="join">
                             <div className="header__bar" />
-                            <div className="join__title"></div>
+                            <div className="join__title">Join</div>
                             <div className="join__box">
                                 <div className="join__form__box">
                                     <div className="input__box">

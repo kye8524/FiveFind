@@ -90,7 +90,7 @@ class Login_page extends Component {
                     <Header/>
                         <div className="login">
                             <div className="login-header-bar"/>
-                            <div className='login__title'></div>
+                            <div className='login__title'>Login</div>
                             <div className='login__box'>
                                 <div className='login__form__box'>
                                     <div className='login__form__content'>
