@@ -1,5 +1,7 @@
 import React, {Component, useState, useEffect} from "react";
+
 import {Link, withRouter} from "react-router-dom";
+
 import "./Header.css";
 
 function Header() {
@@ -10,8 +12,7 @@ function Header() {
     useEffect(()=>{
         window.addEventListener('scroll', updateScroll);
     });
-
-        return(
+    return(
             <div className={scrollPosition < 300 ? "header" : "nav"}>
                 <Link to={'/'}><div className="header_title">FiveFind</div></Link>
                 <ul className="header_box">
@@ -24,5 +25,7 @@ function Header() {
                 </ul>
             </div>
         )
+
+
 }
 export default Header;
