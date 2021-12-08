@@ -8,6 +8,7 @@ import Join from './pages/join/JoinPage';
 import MyPage from "./pages/mypage/mypage";
 import NoticePage from "./pages/notice/notice_page";
 import NoticeDetail from "./pages/notice_detail/notice_detail";
+import TeamList from "./pages/team_list/team_list";
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path='/mypage' component={MyPage}/>
             <Route path='/notice' component={NoticePage}/>
             <Route path='/notice_detail/:noticeSeq' component={NoticeDetail} />
+            <Route path='/list' component={TeamList}/>
         </div>
     );
   }
