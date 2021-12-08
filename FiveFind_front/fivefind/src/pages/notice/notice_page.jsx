@@ -87,12 +87,6 @@ class NoticePage extends Component{
                     <div className="orderPage_line" />
                     <div className="orderPage__title">Notice</div>
                     <div className="orderPage__main">
-                        <div className="noticePage-nav">
-                            <div className="noticePage-nav-side">
-                                <Link to='/notice'><div className="noticePage-nav-text">공지</div></Link>
-                                <Link to='/event'><div className="noticePage-nav-text">이벤트</div></Link>
-                            </div>
-                        </div>
                         <div>
                             <div className='notice-info-head'>
                                 <div className='notice-info-title'>공지사항</div>
