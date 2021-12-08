@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import {Route, withRouter} from 'react-router-dom';
 import Index from "./pages/index/Index";
-
 import Login from './pages/login/LoginPage';
 import Join from './pages/join/JoinPage';
 import MyPage from "./pages/mypage/mypage";
@@ -11,6 +10,7 @@ import NoticeDetail from "./pages/notice_detail/notice_detail";
 import TeamList from "./pages/team_list/team_list";
 import TeamRecruit from "./pages/team_recruit/team_recruit";
 import TeamDetail from "./pages/team_detail/team_detail";
+import Profile from "./pages/propile/profile";
 
 
 
@@ -27,6 +27,7 @@ class App extends Component {
             <Route path='/list' component={TeamList}/>
             <Route path='/recruit' component={TeamRecruit}/>
             <Route path='/list_detail' component={TeamDetail}/>
+            <Route path='/profile' component={Profile}/>
         </div>
     );
   }

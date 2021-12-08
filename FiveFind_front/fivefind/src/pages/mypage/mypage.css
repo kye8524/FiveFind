@@ -1,132 +1,129 @@
-.My_Page{
+.profilePage{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1000px;
     margin: 0 auto;
 }
-.My_Page_line{
-    margin-top: 150px;
+.profilePage_line{
     width: 1000px;
+    align-self: center;
     height: 2px;
-    background: #000000;
+    background: #282c34;
+    margin-top: 150px;
 }
-.My_page__title{
+.profilePage_title{
     display: flex;
     align-self: flex-start;
-    margin: 10px 0 30px 0;
     font-weight: bold;
     font-size: 35px;
-
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
-
-.My_page__main{
+.profilePage_main{
     display: flex;;
     flex-direction: row;
     width: 1000px;
 }
-.my{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-.my__box{
+.profile{
     display: flex;
     flex-direction: column;
     width: 820px;
-    height: 500px;
-}
-.my__box_info{
-    display: flex;
-    flex-direction: row;
-    height: 160px;
-    border: 2px solid #E6E6E6;
+    height: 600px;
+    margin-top: 20px;
 }
 
-.my__box__info__left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 405px;
-    padding: 35px 50px 40px 60px;
-}
-.my__box__info__right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    padding: 35px 50px 40px 60px;
-}
-.my__box__info__box{
+.profile_box_welcome{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 40px;
-    width: 350px;
-    margin-bottom: 25px;
+    justify-content: flex-start;
+    width: 820px;
+    height: 90px;
+    border: 1px solid #BBBBBB;
+    align-items: center;
 }
-.my_box__info__bar{
-    margin-top: 20px;
+.profile_box_welcome_image{
+    margin: 0 40px 0 50px;
+}
+.profile_box_welcome_line{
+    background: #BBBBBB;
     width: 1px;
-    height: 111px;
-    background: #E5E5E5;
+    height: 75px;
+    margin: 0 10px 0 10px;
 }
-
-.my__box__info__box__text{
-    display: flex;
-    align-items: flex-start;
-    font-size: 18px;
-
-}
-.my__box__info__box__cnt{
-    font-size: 18px;
+.profile_box_welcome_text{
+    margin-left: 37px;
     font-weight: bold;
-    width: 30px;
+    font-size: 17px;
 }
 
-.my__box_order{
+.profile_box_info{
     display: flex;
     flex-direction: column;
-    width: 820px;
-    height: 200px;
-    margin-top: 35px;
-    border: 2px solid #B0B0B0;
 }
-.my__box_order__title{
+.profile_box_info_title{
     display: flex;
-    align-items: flex-start;
-    height: 60px;
-    padding: 17px 0 17px 40px;
+    justify-content: flex-start;
     font-weight: bold;
-    font-size: 18px;
-
-    background: #F5F5F5;
+    font-size: 20px;
+    margin : 40px 0 10px 0px;
 }
-.my__box_order_stage{
+.profile_box_info_input{
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    border-radius: 5px;
+    border-top: 1.5px solid #BBBBBB;
+}
+
+.profile_box_info_input_box{
     display: flex;
     flex-direction: row;
+    height: 48px;
 }
-.my_box__stage__bar{
-    margin-top: 20px;
-    width: 2px;
-    height: 100px;
-    background: #E5E5E5;
-}
-.my__box_order_stage__box{
+.profile_box_info_input_box_name{
     display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 140px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    color: #676767;
+    width: 157px;
+    padding-left: 10px;
+    background: #F8F8F8;
+    border-right: 1px solid #BBBBBB;;
 }
-.my__box_order_stage__box__text{
+.profile_box_info_input_box_value{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 24px;
+    width: 200px;
+    height: 35px;
+    font-size: 17px;
+}
 
+.profile_box_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.profile_box_confirm{
+    width: 150px;
+    height: 45px;
+    background: #000000;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
+    color: #FFFFFF;
+    margin: 10px;
 }
-.my__box_order_stage__box__cnt{
+.profile_box_cancel{
+    width: 150px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #8C8C8C;
+    border-radius: 5px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 18px;
 }
