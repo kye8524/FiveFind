@@ -138,6 +138,21 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/noticeDetail/notice_detail.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/noticeDetail/notice_detail.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/notice_detail/notice_detail.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
