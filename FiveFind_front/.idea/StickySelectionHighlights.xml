@@ -13,6 +13,16 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/components/Category/Category.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/components/Category/Category.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/components/Footer/Footer.css">
           <value>
             <PaintGroupHighlightMap />
@@ -153,12 +163,37 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/propile/profile.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/team_detail/team_detail.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/team_detail/team_detail.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/pages/team_list/team_list.css">
           <value>
             <PaintGroupHighlightMap />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/pages/team_list/team_list.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/team_recruit/team_recruit.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/team_recruit/team_recruit.jsx">
           <value>
             <PaintGroupHighlightMap />
           </value>

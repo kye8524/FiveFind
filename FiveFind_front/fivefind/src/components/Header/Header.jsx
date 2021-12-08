@@ -49,8 +49,8 @@ class Header extends Component{
             <div className="header">
                 <Link to={'/'}><div className="header_title">FiveFind</div></Link>
                 <ul className="header_box">
-                    <li className="header_box_text">팀 모집</li>
-                    <li className="header_box_text"><Link to="/list">팀 찾기</Link></li>
+                    <li className="header_box_text"><Link to='/recruit'>팀 모집</Link></li>
+                    <li className="header_box_text"><Link to='/list'>팀 찾기</Link></li>
                     <li className="header_box_text"><Link to='/notice'>공지사항</Link></li>
                     <li className="header_box_bar" />
                     <li className="header_box_text">{!(this.state.token) ? <Link to ="/join"><div className='header-top-login-text'>회원가입</div></Link> : <Link to="/mypage"><div>마이페이지</div></Link>}</li>
