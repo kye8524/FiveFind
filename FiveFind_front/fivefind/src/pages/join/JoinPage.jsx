@@ -10,11 +10,11 @@ class JoinPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: '',
+            email: '',
             pwd: '',
             pwdRe: '',
             name: '',
-            phoneNumber: '',
+            phone: '',
             isValidID: undefined,
             isValidPwd : undefined,
             passwordCheck: undefined,
@@ -24,93 +24,60 @@ class JoinPage extends Component {
             checked : false,
             token : undefined,
             userSeq : undefined,
-            userType: undefined
+            userName: undefined
         }
     }
 
     join = () => {
-        let {id, pwd, name, phoneNumber,isValidID,isValidPwd,isMatchPassword,checked} = this.state;
-        if(isValidID===false){
-            alert("아이디 중복확인을 해주세요")
-        }else if(isValidPwd===false){
+        let {email, pwd, name, phone,isValidPwd,isMatchPassword,checked} = this.state;
+        if(isValidPwd===false){
             alert("올바르지 않은 비밀번호입니다")
         }else if(isMatchPassword===false){
             alert("비밀번호가 일치하지 않습니다")
-        }else if(!id || !pwd || !name || !phoneNumber){
+        }else if(!email || !pwd || !name || !phone){
             alert("필수 항목을 작성해주세요")
         }else if(checked===false) {
             alert("이용약관에 동의해주세요")
         }else {
             let result = axios({
                 method: 'POST',
-                url: "http://52.79.196.94:3001/auth/signup",
+                url: "http://localhost:8080/user/signup",
                 headers: {
                     "Content-Type": `application/json`,
                 },
                 data: {
-                    id: id,
-                    passwd: pwd,
+                    email: email,
+                    pwd: pwd,
                     name: name,
-                    phoneNum: phoneNumber,
+                    phone: phone,
                 }
             }).then((result) => {
                 if (result.status < 400) {
                     alert('회원가입이 성공적으로 완료되었습니다.');
                     const response = axios( {
                         method : 'POST',
-                        url : "http://52.79.196.94:3001/auth/login",
+                        url : "http://localhost:8080/user/login",
                         headers: {
                             "Content-Type": `application/json`,
                         },
                         data : {
-                            id : id,
-                            passwd : pwd
+                            email : email,
+                            pwd : pwd
                         }
                     }).then((response)=>{
-                        if(response.status<400){
                             const {history} = this.props;
-                            this.state.token = result.data.accessToken;
-                            this.state.userSeq = result.data.userSeq;
-                            this.state.userType=result.data.userType;
-                            this.state.userName=result.data.name;
+                            this.state.token = result.data.data.token;
+                            this.state.userSeq = result.data.data.seq;
+                            this.state.userName=result.data.data.name;
                             setCookie("userSeq", this.state.userSeq);
                             setCookie("accessToken", this.state.token);
-                            setCookie("userType",this.state.userType);
                             setCookie("userName",this.state.userName);
                             history.push('/');
-                        }
+
                     });
-                } else {
-                    //TODO 회원가입 실패 시 그 이후 로직 추가 필요
                 }
             });
         }
-    }
-
-    checkOverlapID = () => {
-        let {id} = this.state;
-        let result = axios({
-            method: 'POST',
-            url: "http://52.79.196.94:3001/auth/overlap_id",
-            headers: {
-                "Content-Type": `application/json`,
-            },
-            data: {
-                id: id
-            }
-        }).then((result) => {
-            if(result.data.tf ===true){
-                console.log(result.data.tf);
-                this.setState({isValidID: true})
-                this.setState({onClick: true})
-            }else{
-                console.log(result.data.tf);
-                this.setState({isValidID: false})
-                this.setState({onClick: true})
-                document.getElementById("id_box").value='';
-            }
-        })
-
     }
 
     isPassword(asValue) {
@@ -159,7 +126,7 @@ class JoinPage extends Component {
     };
 
     handleChangeId = (e) => {
-        this.setState({id: e.target.value})
+        this.setState({email: e.target.value})
     }
     handleChangePwd = (e) => {
         this.setState({pwd: e.target.value})
@@ -171,13 +138,13 @@ class JoinPage extends Component {
         this.setState({name: e.target.value})
     }
     handleChangePhoneNum = (e) => {
-        this.setState({phoneNumber: e.target.value})
+        this.setState({phone: e.target.value})
     }
     handleChecked = (e) => {
         this.setState({checked : e.target.checked})
     }
     render() {
-        const {id, pwd, pwdRe, name, phoneNumber} = this.state;
+        const {email, pwd, pwdRe, name, phone} = this.state;
         return (
             <div>
                 <div className="join_page">
@@ -190,15 +157,11 @@ class JoinPage extends Component {
                                 <div className="join__form__box">
                                     <div className="input__box">
                                         <span>*</span>
-                                        <div className="input__box__just">아이디
+                                        <div className="input__box__just">이메일
                                             <div className="input__box__alin">
-                                                <input type="text" className="input" id="id_box" value={id} onChange={this.handleChangeId} required/>
+                                                <input type="text" className="input" id="id_box" value={email} onChange={this.handleChangeId} required/>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='input__check'>
-                                        <button className="overlap__btn" onClick={this.checkOverlapID}>중복 확인</button>
-                                        {(this.state.onClick) ? ((this.state.isValidID) ? <div style={{ color: "blue" }}>사용가능한 ID입니다.</div> : <div style={{ color: "red" }}>이미 존재하는 ID입니다.</div>) : null}
                                     </div>
                                     <div className="input__box">
                                         <span>*</span>
@@ -243,7 +206,7 @@ class JoinPage extends Component {
                                     <div className="input__box">
                                         <span>*</span>
                                         <div className="input__box__just">휴대전화<input type="text" className="input"
-                                                                                     value={phoneNumber}
+                                                                                     value={phone}
                                                                                      onChange={this.handleChangePhoneNum} required/>
                                         </div>
                                     </div>

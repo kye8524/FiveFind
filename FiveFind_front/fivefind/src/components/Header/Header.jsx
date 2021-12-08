@@ -36,6 +36,14 @@ class Header extends Component{
         history.push('/');
     }
 
+    componentDidMount(){
+        this.setState({
+            token : getCookie("accessToken"),
+            userSeq : getCookie("userSeq"),
+            userName : getCookie("userName"),
+        })
+    }
+
     render() {
         return(
             <div className="header">
@@ -54,4 +62,4 @@ class Header extends Component{
     }
 
 }
-export default Header;
+export default withRouter(Header);
