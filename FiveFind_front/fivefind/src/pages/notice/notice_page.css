@@ -1,0 +1,244 @@
+.noticePage{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin: 0 auto;
+}
+.noticePage-main{
+    display: flex;
+    flex-direction: column;
+}
+.noticePage-title{
+    display: flex;
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.noticePage-nav{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-top: 50px;
+}
+.noticePage-nav-side{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.noticePage-nav-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 18px 0;
+    margin-right: 150px;
+    font-size: 17px;
+}
+.noticePage-table{
+    width: 820px;
+}
+
+.notice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.notice-subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+.notice-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 7px;
+    margin: 0 0 7px 0;
+    border-top: 1px solid #BBBBBB;
+}
+.notice-seq{
+    width: 120px;
+    padding-left: 30px;
+}
+.notice-title{
+    width: 400px;
+    padding-left: 30px;
+}
+.notice-date{
+    width: 300px;
+}
+
+.notice-info-head{
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.notice-info-title{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.notice-info-sort{
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #000000;
+    background-color: #ffcd00;
+    border-radius: 5px;
+}
+.page-num-box-notice{
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.page-num-box-admin-notice{
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+
+
+
+
+
+.orderPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+
+
+}
+.orderPage_line{
+    width: 1000px;
+    align-self: center;
+    height: 2px;
+    background: #000000;
+    margin-top: 150px;
+}
+.orderPage__title{
+    display: flex;
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.orderPage__main{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+
+
+.order-info{
+    display: flex;
+    flex-direction: column;
+    width: 820px;
+    height: 450px;
+}
+
+.order_info_title{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.order_info_box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-top: 1px solid #BBBBBB;
+    border-bottom: 1px solid #BBBBBB;
+    margin-bottom: 55px;
+}
+.order-info-box-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+.order-info-box-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7px 0 7px 0;
+    border-top: 1px solid #BBBBBB;
+    background-color: white;
+    height: 40px;
+}
+.order-info-box-date{
+    width: 170px;
+}
+.order-info-box-info{
+    width: 200px;
+}
+
+.order-info-box-price{
+    width: 120px;
+}
+.order-info-box-state{
+    width: 150px;
+}
+.order-info-box-qna{
+    width: 120px;
+}
+.order_paging{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.order_paging_before{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #DDDDDD;
+}
+.order_paging_this{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #DDDDDD;
+    font-size: 18px;
+}
+.order_paging_after{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #DDDDDD;
+}
+.review-dropdown-box{
+    display: flex;
+    flex-direction: row;
+
+    padding: 7px 0 7px 0;
+}
+.order-dropdown-subject{
+    width: 200px;
+    font-weight: bold;
+
+}
+.order-dropdown-text{
+    margin-left: 20px;
+
+}
+.review-dropdown2{
+    width: 820px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 10px 50px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

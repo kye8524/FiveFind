@@ -113,7 +113,42 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/mypage/mypage.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/fivefind/src/pages/mypage/mypage.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/notice/notice_page.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/notice/notice_page.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/noticeDetail/Notice_detail.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/noticeDetail/notice_detail.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/noticeDetail/notice_detail.jsx">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fivefind/src/pages/notice_detail/notice_detail.jsx">
           <value>
             <PaintGroupHighlightMap />
           </value>

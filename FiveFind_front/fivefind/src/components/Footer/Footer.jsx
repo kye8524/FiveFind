@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import {Link, withRouter} from "react-router-dom";
 import "./Footer.css"
 
 class Footer extends Component{
@@ -8,7 +9,7 @@ class Footer extends Component{
                 <div className="index_container">
                     <div className="footer_box_logo">Fivefind</div>
                     <ul className="footer_box">
-                        <li className="footer_box_text">공지사항</li>
+                        <li className="footer_box_text"><Link to='/notice'>공지사항</Link></li>
                         <li className="footer_box_text">회원약관</li>
                         <li className="footer_box_text">개인정보처리방침</li>
                         <li className="footer_box_text">고객문의</li>
