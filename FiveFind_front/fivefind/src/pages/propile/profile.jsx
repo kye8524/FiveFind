@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import {Link, Route, withRouter} from 'react-router-dom';
-import './mypage.css'
+import '../mypage/mypage.css';
+import './profile.css';
 import Header from "../../components/Header/Header";
 import SideNav from "../../components/SideNav/SideNav";
 import Footer from "../../components/Footer/Footer";
@@ -8,7 +9,7 @@ import People from "../../img/people.svg";
 import axios from "axios";
 import {getCookie} from "../../cookies";
 
-class MyPage extends Component{
+class Profile extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -66,15 +67,8 @@ class MyPage extends Component{
                         <SideNav/>
                         <div>
                             <div className="profile">
-                                <div className="profile_box_welcome">
-                                    <img src={People} className="profile_box_welcome_image" />
-                                    <div className="profile_box_welcome_line"/>
-                                    <div className="profile_box_welcome_text">
-                                        회원님 저희 페이지를 이용해주셔서 감사합니다.
-                                    </div>
-                                </div>
                                 <div className="profile_box_info">
-                                    <div className="profile_box_info_title">기본정보</div>
+                                    <div className="profile_box_info_title">상세정보</div>
                                     <div className="profile_box_info_input">
                                         <div className="profile_box_info_input_box">
                                             <div className="profile_box_info_input_box_name">아이디</div>
@@ -98,7 +92,6 @@ class MyPage extends Component{
                                     <button className="profile_box_confirm">회원정보수정</button>
                                     <button className="profile_box_cancel">취소</button>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -109,4 +102,4 @@ class MyPage extends Component{
     }
 }
 
-export default MyPage;
+export default Profile;
