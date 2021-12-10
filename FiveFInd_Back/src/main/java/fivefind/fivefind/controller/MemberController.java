@@ -67,7 +67,6 @@ public class MemberController {
             Member member = user.get();
             return new Response("success", "user 정보 보기", user);
         }
-
         return new Response("error", "user가 없음", null);
     }
 

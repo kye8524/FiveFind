@@ -33,14 +33,14 @@ class NoticePage extends Component{
     getNotice = async function() {
         let result =await axios ({
             method : 'GET',
-            url : 'http://52.79.196.94:3001/notice',
+            url : 'http://localhost:8080/notice',
             data: { },
             headers : {
 
                 "Content-Type" : 'application/json'
             },
         })
-        this.setState({notices : result.data});
+        this.setState({notices : result.data.data});
         var pageNumbers= [];
         for(let i =1; i<=Math.ceil(this.state.notices.length/this.state.postsPerPage); i++){
             pageNumbers.push({'num' : i});
@@ -92,8 +92,6 @@ class NoticePage extends Component{
                                 <div className='notice-info-title'>공지사항</div>
                                 <div className='notice-info-sortBtn'>
                                     <button className='notice-info-sort'>최신순</button>
-                                    <button className='notice-info-sort'>진행중</button>
-                                    <button className='notice-info-sort'>종료</button>
                                 </div>
                             </div>
                             <div className='order-info'>
@@ -102,15 +100,15 @@ class NoticePage extends Component{
                                         <div className="notice-subject">
                                             <div className="notice-seq">번호</div>
                                             <div className="notice-title">제목</div>
-                                            <div className="notice-date">기간</div>
+                                            <div className="notice-date">등록일</div>
                                         </div>
                                         {this.currentPosts(this.state.notices).map(arr=>(
-                                            <div key={arr.noticeSeq}>
-                                                <Link to={`/notice_detail/${arr.noticeSeq}`}>
+                                            <div key={arr.seq}>
+                                                <Link to={`/notice_detail/${arr.seq}`}>
                                                     <div className="notice-content">
-                                                        <div className="notice-seq">{arr.noticeSeq}</div>
+                                                        <div className="notice-seq">{arr.seq}</div>
                                                         <div className="notice-title">{arr.title}</div>
-                                                        <div className="notice-date">{arr.start_date} ~ {arr.end_date}</div>
+                                                        <div className="notice-date">{arr.reg_time}</div>
                                                     </div>
                                                 </Link>
                                             </div>

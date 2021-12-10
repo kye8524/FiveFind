@@ -19,14 +19,14 @@ class NoticeDetail extends Component{
     getNoticeInfo = async function() {
         let result =await axios ({
             method : 'GET',
-            url : `http://52.79.196.94:3001/notice/${this.props.match.params.noticeSeq}`,
+            url : `http://localhost:8080/notice/${this.props.match.params.noticeSeq}`,
             data: { },
             headers : {
                 "Content-Type" : 'application/json'
             },
         })
-        this.setState({noticeInfo : result.data[0]});
-        console.log(this.state.noticeInfo);
+        this.setState({noticeInfo : result.data.data});
+        console.log(this.state.noticeInfo.content);
         console.log(this.props.match.params.noticeSeq);
     }
 
@@ -53,7 +53,7 @@ class NoticeDetail extends Component{
                                     <div className='notice-info-box-subBox'>
                                         <div className='notice-info-box-subBox-date'>
                                             <div className='notice-info-box-subBox-title'>작성일</div>
-                                            <div className='notice-info-box-subBox-text'>{this.state.noticeInfo.start_date} ~ {this.state.noticeInfo.end_date}</div>
+                                            <div className='notice-info-box-subBox-text'>{this.state.noticeInfo.reg_time}</div>
                                         </div>
 
                                     </div>
