@@ -1,10 +1,8 @@
 package fivefind.fivefind.entity;
 
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 @Getter
@@ -13,20 +11,23 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Notice {
+public class Team {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int seq;
 
-    @Column(length = 300, nullable = false)
+    @Column(length = 10, nullable = false)
+    private String name;
+
+    @Column(length = 50, nullable = false)
     private String title;
+
+    @Column(length = 10, nullable = false)
+    private String category;
 
     @Column(length = 300, nullable = false)
     private String content;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @CreationTimestamp
-    private Date reg_time;
 
 }
