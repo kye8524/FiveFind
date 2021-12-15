@@ -12,7 +12,6 @@ class NoticePage extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            products : [{'productSeq' : '1'}],
             notices : [{'noticeSeq': '1'}],
             noticeSeq : 0,
             currentPage: 1,

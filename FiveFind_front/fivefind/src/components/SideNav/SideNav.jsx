@@ -8,7 +8,6 @@ class SideNav extends Component{
                 <div className="pageNav">
                     <div className="pageNav-category">
                         <Link to='/mypage'><div className="pageNav-category-text">회원정보</div></Link>
-                        <Link to='/profile'><div className="pageNav-category-text">상세정보</div></Link>
                     </div>
                 </div>
         )

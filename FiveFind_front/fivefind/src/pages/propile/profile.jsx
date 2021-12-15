@@ -14,10 +14,11 @@ class Profile extends Component{
         super(props);
         this.state = {
             userInfo: {'productSeq': '1'},
-            id : '',
+            email : '',
             pwd : '',
             name : '',
-            phoneNum : '',
+            info : '',
+            phone : '',
             userSeq : undefined,
             token : undefined,
         }
@@ -27,14 +28,14 @@ class Profile extends Component{
         this.state.userSeq = getCookie("userSeq");
         let result =await axios ({
             method : 'GET',
-            url : `http://52.79.196.94:3001/auth/${this.state.userSeq}`,
+            url : `http://localhost:8080/user/${this.state.userSeq}`,
             data: { },
             headers : {
                 "Content-Type" : 'application/json',
                 "x-access-token" : getCookie("accessToken"),
             },
         });
-        this.setState({userInfo : result.data[0]});
+        this.setState({userInfo : result.data.data});
         console.log(this.state.userInfo);
     };
 
@@ -47,6 +48,9 @@ class Profile extends Component{
     }
     handleChangeName = (e) => {
         this.setState({name: e.target.value})
+    }
+    handleChangeInfo = (e) => {
+        this.setState({info: e.target.value})
     }
     handleChangePhoneNum = (e) => {
         this.setState({phoneNumber: e.target.value})
@@ -72,7 +76,7 @@ class Profile extends Component{
                                     <div className="profile_box_info_input">
                                         <div className="profile_box_info_input_box">
                                             <div className="profile_box_info_input_box_name">아이디</div>
-                                            <input type="text" className="profile_box_info_input_box_value" value={this.state.userInfo.id} onChange={this.handleChangeId}/>
+                                            <input type="text" className="profile_box_info_input_box_value" value={this.state.userInfo.email} onChange={this.handleChangeId}/>
                                         </div>
                                         <div className="profile_box_info_input_box">
                                             <div className="profile_box_info_input_box_name">이름</div>
@@ -80,11 +84,11 @@ class Profile extends Component{
                                         </div>
                                         <div className="profile_box_info_input_box">
                                             <div className="profile_box_info_input_box_name">휴대전화</div>
-                                            <input type="text" className="profile_box_info_input_box_value" value={this.state.userInfo.phoneNum} onChange={this.handleChangePhoneNum}/>
+                                            <input type="text" className="profile_box_info_input_box_value" value={this.state.userInfo.phone} onChange={this.handleChangePhoneNum}/>
                                         </div>
                                         <div className="profile_box_info_input_box">
-                                            <div className="profile_box_info_input_box_name">비밀번호</div>
-                                            <input type="password" className="profile_box_info_input_box_value" value={this.state.userInfo.passwd}/>
+                                            <div className="profile_box_info_input_box_name">한줄소개</div>
+                                            <input type="text" className="profile_box_info_input_box_value" value={this.state.userInfo.info}/>
                                         </div>
                                     </div>
                                 </div>

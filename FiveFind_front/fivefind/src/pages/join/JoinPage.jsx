@@ -15,6 +15,7 @@ class JoinPage extends Component {
             pwdRe: '',
             name: '',
             phone: '',
+            info: '',
             isValidID: undefined,
             isValidPwd : undefined,
             passwordCheck: undefined,
@@ -29,12 +30,12 @@ class JoinPage extends Component {
     }
 
     join = () => {
-        let {email, pwd, name, phone,isValidPwd,isMatchPassword,checked} = this.state;
+        let {email, pwd, name, info,phone,isValidPwd,isMatchPassword,checked} = this.state;
         if(isValidPwd===false){
             alert("올바르지 않은 비밀번호입니다")
         }else if(isMatchPassword===false){
             alert("비밀번호가 일치하지 않습니다")
-        }else if(!email || !pwd || !name || !phone){
+        }else if(!email || !pwd || !name || !phone || !info){
             alert("필수 항목을 작성해주세요")
         }else if(checked===false) {
             alert("이용약관에 동의해주세요")
@@ -49,6 +50,7 @@ class JoinPage extends Component {
                     email: email,
                     pwd: pwd,
                     name: name,
+                    info: info,
                     phone: phone,
                 }
             }).then((result) => {
@@ -137,6 +139,9 @@ class JoinPage extends Component {
     handleChangeName = (e) => {
         this.setState({name: e.target.value})
     }
+    handleChangeInfo = (e) => {
+        this.setState({info: e.target.value})
+    }
     handleChangePhoneNum = (e) => {
         this.setState({phone: e.target.value})
     }
@@ -144,7 +149,7 @@ class JoinPage extends Component {
         this.setState({checked : e.target.checked})
     }
     render() {
-        const {email, pwd, pwdRe, name, phone} = this.state;
+        const {email, pwd, pwdRe, name,info, phone} = this.state;
         return (
             <div>
                 <div className="join_page">
@@ -202,6 +207,11 @@ class JoinPage extends Component {
                                         <span>*</span>
                                         <div className="input__box__just">이름<input type="text" className="input" value={name}
                                                                                    onChange={this.handleChangeName} required/></div>
+                                    </div>
+                                    <div className="input__box">
+                                        <span>*</span>
+                                        <div className="input__box__just">한줄소개<input type="text" className="input" value={info}
+                                                                                   onChange={this.handleChangeInfo} required/></div>
                                     </div>
                                     <div className="input__box">
                                         <span>*</span>
