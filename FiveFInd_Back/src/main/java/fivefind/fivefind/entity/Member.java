@@ -31,12 +31,13 @@ public class Member implements UserDetails{
     @Column(length = 300, nullable = false)
     private String pwd;
 
-
-
     @Column(length = 30, nullable = false)
+    private String info;
+
+    @Column(length = 10, nullable = false)
     private String name;
 
-    @Column(length = 30, nullable = false)
+    @Column(length = 15, nullable = false)
     private String phone;
 
     @ElementCollection(fetch = FetchType.EAGER)
