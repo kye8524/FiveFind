@@ -26,8 +26,6 @@ class NoticeDetail extends Component{
             },
         })
         this.setState({noticeInfo : result.data.data});
-        console.log(this.state.noticeInfo.content);
-        console.log(this.props.match.params.noticeSeq);
     }
 
     componentDidMount() {

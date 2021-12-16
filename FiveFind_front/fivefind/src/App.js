@@ -26,7 +26,7 @@ class App extends Component {
             <Route path='/notice_detail/:noticeSeq' component={NoticeDetail} />
             <Route path='/list' component={TeamList}/>
             <Route path='/recruit' component={TeamRecruit}/>
-            <Route path='/list_detail' component={TeamDetail}/>
+            <Route path='/list_detail/:teamSeq' component={TeamDetail}/>
             <Route path='/profile' component={Profile}/>
         </div>
     );

@@ -72,7 +72,7 @@ class Index extends Component{
                 <div className="index_start">
                     <div className="index_start_title">start with FiveFind</div>
                     <div className="index_start_text">당신과 함께 팀을 이루고 싶은 <strong>메이트</strong>들이 기다리고 있습니다. 지금, <strong>파이브파인드</strong>에서 만나보세요!</div>
-                    <button className="index_start_btn">팀 빌딩 시작하기</button>
+                    <Link to='/recruit'><button className="index_start_btn">팀 빌딩 시작하기</button></Link>
                 </div>
                 <Footer/>
             </div>

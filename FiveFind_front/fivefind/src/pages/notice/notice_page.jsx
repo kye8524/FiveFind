@@ -25,7 +25,6 @@ class NoticePage extends Component{
         var indexOfFirst = indexOfLast - this.state.postsPerPage;
         let currentPosts = 0;
         currentPosts = _.slice(tmp,indexOfFirst, indexOfLast);
-        console.log(currentPosts);
         return currentPosts;
     }
 
