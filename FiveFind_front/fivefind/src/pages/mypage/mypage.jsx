@@ -57,6 +57,7 @@ class MyPage extends Component{
 
     componentDidMount() {
         this.getUserInfo();
+        window.scrollTo(0,0);
     }
     render() {
 

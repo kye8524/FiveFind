@@ -31,7 +31,7 @@ class TeamDetail extends Component{
 
     componentDidMount() {
         this.getTeamInfo();
-        console.log(this.props.match.params.teamInfo);
+        window.scrollTo(0,0);
     }
     render() {
         return(

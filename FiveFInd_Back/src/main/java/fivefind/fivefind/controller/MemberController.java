@@ -1,5 +1,6 @@
 package fivefind.fivefind.controller;
 
+import fivefind.fivefind.entity.Notice;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import fivefind.fivefind.config.security.JwtTokenProvider;
@@ -65,9 +66,14 @@ public class MemberController {
         Optional<Member> user = memberRepository.findBySeq(userSeq);
         if(user.isPresent()){
             Member member = user.get();
-            return new Response("success", "user 정보 보기", user);
+            return new Response("success", "user 상세정보 보기", user);
         }
         return new Response("error", "user가 없음", null);
+    }
+    @RequestMapping(method = RequestMethod.GET, path = "")
+    public Response getUser(){
+        Iterable<Member> users = memberRepository.findAll();
+        return new Response("success", "user 전체 정보 보기", users);
     }
 
 }

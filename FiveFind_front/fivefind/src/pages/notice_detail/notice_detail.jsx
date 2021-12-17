@@ -30,6 +30,7 @@ class NoticeDetail extends Component{
 
     componentDidMount() {
         this.getNoticeInfo();
+        window.scrollTo(0,0);
     }
 
     render(){

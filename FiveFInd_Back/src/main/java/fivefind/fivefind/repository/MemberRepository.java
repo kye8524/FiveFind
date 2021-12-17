@@ -11,5 +11,7 @@ import java.util.Optional;
 public interface MemberRepository extends CrudRepository<Member, Integer> {
     Optional<Member> findByEmail(String email);
 
+    Iterable<Member> findAll();
+
     Optional<Member> findBySeq(int userSeq);
 }

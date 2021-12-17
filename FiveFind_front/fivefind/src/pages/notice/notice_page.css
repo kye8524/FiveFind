@@ -97,6 +97,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .page-num-box-admin-notice{
     width: 820px;

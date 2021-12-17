@@ -25,7 +25,7 @@ public class NoticeController {
         Optional<Notice> detail = noticeRepository.findBySeq(seq);
         if(detail.isPresent()){
             Notice notice = detail.get();
-            return new Response("success", "notice 정보 보기", detail);
+            return new Response("success", "notice 상세 정보 보기", detail);
         }
         return new Response("error", "notice 가 없음", null);
     }
@@ -33,6 +33,6 @@ public class NoticeController {
     @RequestMapping(method = RequestMethod.GET, path = "")
     public Response getNotice(){
         Iterable<Notice> notices = noticeRepository.findAll();
-            return new Response("success", "notice 정보 보기", notices);
+            return new Response("success", "notice 목록 보기", notices);
     }
 }

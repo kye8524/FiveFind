@@ -61,6 +61,9 @@ class TeamRecruit extends Component{
     handleChangeName = (e) => {
         this.setState({name: e.target.value})
     }
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     render() {
         const {name,title,category,content} = this.state;
         return(

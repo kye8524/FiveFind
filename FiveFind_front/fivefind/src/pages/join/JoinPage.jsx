@@ -148,6 +148,9 @@ class JoinPage extends Component {
     handleChecked = (e) => {
         this.setState({checked : e.target.checked})
     }
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     render() {
         const {email, pwd, pwdRe, name,info, phone} = this.state;
         return (

@@ -74,6 +74,9 @@ class Login_page extends Component {
         }));
 
     }
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     render() {
         const {email,password} = this.state;
         return (

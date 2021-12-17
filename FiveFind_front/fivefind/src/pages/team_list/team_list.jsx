@@ -76,6 +76,7 @@ class TeamList extends Component{
 
     componentDidMount() {
         this.getTeam();
+        window.scrollTo(0,0);
     }
     render() {
         return(

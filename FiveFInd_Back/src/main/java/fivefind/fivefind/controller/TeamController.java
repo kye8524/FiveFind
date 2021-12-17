@@ -29,15 +29,15 @@ public class TeamController {
         Optional<Team>detail = teamRepository.findBySeq(seq);
         if(detail.isPresent()){
             Team team = detail.get();
-            return new Response("success", "team 정보 보기", detail);
+            return new Response("success", "team 상세정보 보기", detail);
         }
-        return new Response("error", "notice 가 없음", null);
+        return new Response("error", "team 가 없음", null);
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "")
     public Response getTeam(){
         Iterable<Team> teams = teamRepository.findAll();
-        return new Response("success", "notice 정보 보기", teams);
+        return new Response("success", "team 목록 보기", teams);
     }
 
     @PostMapping("/regist")
@@ -49,4 +49,6 @@ public class TeamController {
             return new Response("error", "팀등록을 하는 도중 오류가 발생했습니다.", null);
         }
     }
+
+
 }
